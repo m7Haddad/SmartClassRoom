@@ -83,21 +83,6 @@ MAN 120 255 180 255 200
   - Fan
 
 
-## Key Challenges & Solutions
-
-### Problem: IR receiver stopped decoding after 1–2 transmissions  
-**Cause:** PWM timer conflicts on Arduino Uno  
-**Solution:** Switched to Arduino Mega with more hardware timers
-
-### Problem: BLE write not working  
-**Cause:** Incorrect BLE loop structure  
-**Solution:** Fixed characteristic handling inside connection loop
-
-### Problem: NEC protocol reliability  
-**Cause:** Repeat filtering and timing issues  
-**Solution:** Adjusted delays and ensured proper packet spacing
-
-
 ## How to Run
 1. Upload R4 transmitter code to Arduino UNO R4
 2. Upload receiver code to Arduino Mega
